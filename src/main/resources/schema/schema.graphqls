@@ -1,0 +1,23 @@
+type Query {
+    part(partId: String): Part
+    partType(partId: String): PartType
+    PartLocation(partId: String): [PartLocation]
+}
+
+type Part{
+    id: Int
+    partName: String
+    partPrice: String
+}
+
+type PartType{
+    id: Int
+    partName: String
+    partType: String
+}
+
+type PartLocation{
+    id: Int
+    partName: String
+    partLocation: String
+}
